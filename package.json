@@ -1,0 +1,33 @@
+{
+  "name": "bb-plugin-local-whisper",
+  "version": "0.1.0",
+  "description": "Cloudroom voice input transcribed by whisper.cpp on your own machine.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peotools/bb-plugin-local-whisper"
+  },
+  "type": "module",
+  "engines": {
+    "bb": ">=0.43",
+    "bbPluginSdk": ">=0.6.49"
+  },
+  "bb": {
+    "name": "Local Whisper",
+    "description": "Voice input transcribed on this machine with whisper.cpp. Handles long dictation.",
+    "branding": {
+      "icon": "Mic"
+    },
+    "server": "./server.ts",
+    "skills": [],
+    "host": "./host.ts"
+  },
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.6.49",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
